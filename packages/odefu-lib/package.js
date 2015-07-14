@@ -45,8 +45,8 @@ Package.onUse(function (api) {
 	api.imply(packages);
 
 	api.addFiles([
-		"odefu-lib.js",
-		"lodash_init.js"
+		"lib/odefu-lib.js",
+		"lib/lodash_init.js"
 	]);
 
 	api.export([
@@ -58,5 +58,5 @@ Package.onUse(function (api) {
 Package.onTest(function (api) {
 	api.use("tinytest");
 	api.use("odefu-lib");
-	api.addFiles("odefu-lib-tests.js");
+	api.addFiles("tests/odefu-lib-tests.js");
 });
