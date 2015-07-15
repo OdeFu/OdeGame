@@ -11,6 +11,8 @@ Package.onUse(function (api) {
 
 	var packages = [
 		"meteor-platform",
+		"iron:router",
+		"sacha:spin",
 		"stevezhu:lodash"
 	];
 
