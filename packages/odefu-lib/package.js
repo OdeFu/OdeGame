@@ -13,6 +13,14 @@ Package.onUse(function (api) {
 		"meteor-platform",
 		"iron:router",
 		"sacha:spin",
+		"twbs:bootstrap",
+		"ian:accounts-ui-bootstrap-3",
+		"accounts-google",
+		"accounts-password",
+		"accounts-twitter",
+		"accounts-facebook",
+		"accounts-github",
+		"accounts-meteor-developer",
 		"stevezhu:lodash"
 	];
 
