@@ -9,7 +9,7 @@ Package.describe({
 Package.onUse(function (api) {
 	api.versionsFrom("METEOR@1.1");
 
-	api.use(["odefu-lib", "grigio:babel"]);
+	api.use(["odefu-lib", "grigio:babel@0.1.4"]);
 
 	api.imply(["odefu-lib"]);
 

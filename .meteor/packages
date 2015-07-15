@@ -7,6 +7,9 @@
 # The base package
 odefu-lib
 
-# Core packages (dependencies in comment)
+# Core packages (dependencies in comments)
 odefu-config
 odefu-entity # odefu-config
+odefu-map # odefu-config
+odefu-dungeon # odefu-map
+odefu-world # odefu-dungeon

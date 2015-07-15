@@ -10,34 +10,7 @@ Package.onUse(function (api) {
 	api.versionsFrom("METEOR@1.1");
 
 	var packages = [
-		"autoupdate",
-		"base64",
-		"binary-heap",
-		"callback-hook",
-		"check",
-		"ddp",
-		"tracker",
-		"ejson",
-		"id-map",
-		"json",
-		"livedata",
-		"logging",
-		"minifiers",
-		"minimongo",
-		"mongo",
-		"random",
-		"reactive-dict",
-		"reactive-var",
-		"reload",
-		"retry",
-		"session",
-		"webapp",
-		"url",
-		"observe-sequence",
-		"http",
-		"routepolicy",
-		"ordered-dict",
-		"webapp-hashing",
+		"meteor-platform",
 		"stevezhu:lodash"
 	];
 

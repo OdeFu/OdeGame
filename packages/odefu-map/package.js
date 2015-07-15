@@ -1,7 +1,7 @@
 Package.describe({
-	name: "odefu-entity",
+	name: "odefu-map",
 	version: "0.0.1",
-	summary: "A base entity system for OdeGame.",
+	summary: "A generator for a single level map.",
 	git: "https://github.com/OdeFu/OdeGame.git",
 	documentation: "README.md"
 });
@@ -9,15 +9,15 @@ Package.describe({
 Package.onUse(function (api) {
 	api.versionsFrom("METEOR@1.1");
 
-	api.use(["odefu-lib", "odefu-config", "grigio:babel@0.1.4"]);
+	api.use(["odefu-lib", "odefu-config", "grigio:babel@0.1.4", "oaalto:rot"]);
 
 	api.imply(["odefu-lib", "odefu-config"]);
 
-	api.addFiles("lib/odefu-entity.jsx");
+	api.addFiles(["lib/odefu-map.jsx"]);
 });
 
 Package.onTest(function (api) {
 	api.use("tinytest");
-	api.use("odefu-entity");
-	api.addFiles("tests/odefu-entity-tests.js");
+	api.use("odefu-map");
+	api.addFiles(["tests/odefu-map-tests.js"]);
 });
